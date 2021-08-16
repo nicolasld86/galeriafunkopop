@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(
+    68.2deg,
+    rgba(255, 202, 88, 1) 0%,
+    rgba(139, 73, 255, 1) 100.2%
+  );
+  padding: 45px 0px;
+  color: blanchedalmond;
+}
+
+footer {
+  text-align: center;
+  background: rgb(97, 96, 96);
+  color: ivory;
+  padding: 20px 0px;
+}
+
+main {
+  margin: 25px;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.caja {
+  width: 23%;
+  margin: 10px;
+}
+
+.caja img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px grey;
+  /*filter:blur(3px);*/
+}
+
+img:hover {
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+  /*filter:blur(0px)*/
+  transition: 300ms;
+  /*filter: opacity(50%)*/
+  filter: grayscale(50%);
+}
+
+/* @media tipo de medio: tablets and (condicion) {...
+tipos de medio: print, screen, speech, all*/
+
+/*dispositivos grandes*/
+
+@media all and (min-width: 992px){} 
+
+
+
+/*dispositivos mediano: tablet */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .caja {
+    width: 30%;
+  }
+}
+
+/* dispositivos pequeños: celulares  */
+
+@media all and (min-width: 1px) and (max-width: 767px) {
+  .caja {
+    width: 95%;
+  }
+}
+
+/*dispositivos extragrandes*/
+
+@media all and (min-width: 992px) {
+  .titulogrande {
+    height: 250px;
+  }
+}
